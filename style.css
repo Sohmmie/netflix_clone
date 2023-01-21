@@ -223,6 +223,7 @@ body{
     align-items: center;
     padding: 70px;
     border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
 }
 
 .part4 .explain {
@@ -247,4 +248,381 @@ body{
 
 .part4 .img img {
     width: 100%;
+}
+
+.list{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.list h1 {
+    color: white;
+    font-size: 3rem;
+    padding: 3rem 0 4rem 0;
+}
+
+.tittle {
+    background-color: #303030 ;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.icon{
+    width: 20px;
+    position: relative;
+}
+
+.icon::before, .icon::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    top: -1.5px;
+}
+
+.icon::after{
+    transform: rotate(90deg);
+    transition: 0.5s linear;
+}
+
+.text {
+    background-color: #303030 ;
+    line-height: 30px;
+    margin: 3px 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 0;
+    opacity: 0;
+}
+
+.item:target .text{
+    opacity: 1;
+    height: auto;
+    padding: 20px 30px;
+    margin: 0;
+    border-top: 2px solid #000;
+    margin-bottom: 6px;
+}
+
+.item:target .icon::after{
+    transform: rotateY(90deg)
+}
+
+.box p {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+
+
+
+
+.box .search input{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 200;
+    border: 1px solid saddlebrown;
+    outline: none;
+    color: grey;
+    padding: 10px 10px 0 0;
+    min-width: 400px;
+    height: 50px;
+    align-items: center;
+}
+
+.box .search a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    background-color: red;
+    font-size: 1.5rem;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    padding: 4rem 0;
+    border-top: 3px solid grey;
+}
+
+footer .one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+}
+footer .one li{
+    padding: 7px 5px;
+}
+footer .one li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8rem;
+}
+footer .one li a:hover{
+    border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 787px ){
+    .clip .box{
+        top: 20%;
+    }
+
+    .clip .box .heading h2 {
+        font-size: 2.8rem;
+        color: white;
+        letter-spacing: 1.5px;
+        width: 80%;
+    }
+    .clip .box .heading h5 {
+        font-size: 1.4rem;
+        padding: 1rem 0 0.2rem 0;
+    }
+    
+    .clip .box .heading p {
+        font-size: 1rem;
+        padding: 12px;
+        padding-bottom: 15px;
+    }
+    
+    .clip .box .search{
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    .clip .box .search input{
+        min-width: 300px;
+    }
+    
+    .clip .box .search a{
+        min-width: 200px; 
+    }
+
+    .part1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .part1 .explain {
+        width: 80%;
+        margin: 20px 0 25px 0;
+    }
+    
+    .part1 .explain h1{
+        font-size: 2.8rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    
+    .part1 .explain p{
+        font-size: 1.3rem;
+    }
+    
+    .part1 .img {
+        width: 50%;
+    }
+
+    .part2{
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .part2 .explain {
+        width: 80%;
+        margin: 20px 0 25px 0;
+    }
+    
+    .part2 .explain h1{
+        font-size: 2.8rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    
+    .part2 .explain p{
+        font-size: 1.3rem;
+    }
+    
+    .part2 .img {
+        width: 70%;
+    }
+
+    .part3{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .part3 .explain {
+        width: 80%;
+        margin: 20px 0 25px 0;
+    }
+    
+    .part3 .explain h1{
+        font-size: 2.8rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    
+    .part3 .explain p{
+        font-size: 1.3rem;
+    }
+    
+    .part3 .img {
+        width: 60%;
+    }
+
+    .part4{
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .part4 .explain {
+        width: 80%;
+        margin: 20px 0 25px 0;
+    }
+    
+    .part4 .explain h1{
+        font-size: 2.8rem;
+        letter-spacing: 1.5px;
+        padding-bottom: 5px;
+    }
+    
+    .part4 .explain p{
+        font-size: 1.3rem;
+    }
+    
+    .part4 .img {
+        width: 70%;
+    }
+    
+    .list{
+        width: 80%;
+        text-align: center;
+    }
+    
+    .list h1 {
+        font-size: 2.7rem;
+        padding: 3rem 0 4rem 0;
+    }
+        
+    .box p {
+        font-size: 1rem;
+        padding: 12px;
+        padding-bottom: 15px;
+    }
+    
+    .box .search{
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    .box .search input{
+        min-width: 300px;
+    }
+    
+    .box .search a{
+        min-width: 200px; 
+    }
+
+    footer .one{
+        justify-content: space-between;
+        margin: auto;
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 496px ){
+    .clip .box{
+        top: 20%;
+    }
+
+    .clip .box .heading h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+        width: 100%;
+    }
+    .clip .box .heading h5 {
+        font-size: 1.4rem;
+    }
+    
+    .clip .box .heading p {
+        font-size: 1rem;
+        padding: 10px;
+        padding-bottom: 12px;
+    }
+    
+    .clip .box .search{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    
+    .clip .box .search input{
+        min-width: 300px;
+        margin: 10px;
+    }
+    
+    .clip .box .search a{
+        min-width: 300px; 
+        text-align: center;
+    }
+
+    .list{
+        width: 90%;
+        text-align: center;
+    }
+    
+    .list h1 {
+        font-size: 2.5rem;
+        padding: 3rem 0 4rem 0;
+    }
+
+    .box p {
+        font-size: 1rem;
+        padding: 10px;
+        padding-bottom: 12px;
+    }
+    
+    .box .search{
+        flex-direction:column;
+        margin-bottom: 20px;
+    }
+    
+    .box .search input{
+        min-width: 400px;
+        margin: 20px;
+    }
+    
+    .box .search a{
+        min-width: 400px; 
+        text-align: center;
+    }
 }

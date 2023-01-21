@@ -7,7 +7,7 @@
 
 body{
     background-color: black;
-    height: 120vh;
+    height: 150vh;
 }
 
 .container  header {
@@ -52,7 +52,7 @@ body{
 .signin-box{
     position: absolute;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     top: 15%;
     width:40%;
     left: 30%;
@@ -124,3 +124,77 @@ body{
     color: blue;
 }
 
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+footer .one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+}
+footer .one li{
+    padding: 7px 5px;
+}
+footer .one li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8rem;
+}
+footer .one li a:hover{
+    border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 787px ){
+    .signin-box{
+        top: 10%;
+        width:60%;
+        left: 20%;
+        right: 25%;
+    }
+    
+    .signin-box h2{
+        color: white;
+        margin: 12px;
+        font-size: 2.2rem;
+    }
+
+    .signin-box .input-box input{
+        border: none;
+        padding: 20px;
+        margin: 12px;
+        background-color: darkgray;
+        font-weight: 300;
+    }
+    
+    .signin-box .input-box button{
+        padding: 20px;
+        margin: 20px 12px;
+    }
+    
+    .signin-box .rememberme-box{
+        margin: 0 12px;
+    }
+    
+    .signin-box .signup-box{
+        margin: 20px 10px 20px 10px; 
+   }
+
+    .signin-box .signup-box .finally{
+        font-size: 0.8rem;
+        margin: 5px 0 20px 0;
+    }    
+}
+
+@media screen and (max-width: 496px ){
+    .signin-box .signup-box{
+        margin: 10px; 
+    }
+
+}
